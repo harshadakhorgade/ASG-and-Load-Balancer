@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC2 Instance Details</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #2c3e50; }
+        table { width: 50%; border-collapse: collapse; margin-top: 20px; }
+        td, th { border: 1px solid #ddd; padding: 10px; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1>EC2 Instance Information</h1>
+    <table>
+        <tr><th>Instance ID</th><td>{{ Instance_ID }}</td></tr>
+        <tr><th>Public IP</th><td>{{ Public_IP }}</td></tr>
+        <tr><th>Region</th><td>{{ Region }}</td></tr>
+        <tr><th>Availability Zone</th><td>{{ Availability_Zone }}</td></tr>
+        <tr><th>CPU Usage (%)</th><td>{{ CPU_Usage }}</td></tr>
+        <tr><th>Memory Used (MB)</th><td>{{ Memory_Used }}</td></tr>
+        <tr><th>Total Memory (MB)</th><td>{{ Total_Memory }}</td></tr>
+    </table>
+</body>
+</html>
