@@ -5,8 +5,8 @@ After=network.target
 [Service]
 User=ubuntu
 Group=www-data
-WorkingDirectory=/home/ubuntu/ASG
-ExecStart=/home/ubuntu/ASG/venv/bin/gunicorn \
+WorkingDirectory=/home/ubuntu/ASG-and-Load-balancer
+ExecStart=/home/ubuntu/ASG-and-Load-balancer/venv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind 0.0.0.0:8000 \

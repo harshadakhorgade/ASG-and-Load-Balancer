@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-PROJECT_MAIN_DIR_NAME="ASG"
+PROJECT_MAIN_DIR_NAME="ASG-and-Load-balancer"
 
 # Validate variables
 if [ -z "$PROJECT_MAIN_DIR_NAME" ]; then
